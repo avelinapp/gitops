@@ -1,0 +1,16 @@
+apiVersion: gateway.networking.k8s.io/v1beta1
+kind: HTTPRoute
+metadata:
+  name: avelin-api
+spec:
+  parentRefs:
+    - kind: Gateway
+      name: avelin-gateway
+      namespace: infra
+  hostnames:
+    - api.avelin.app
+  rules:
+    - backendRefs:
+        - name: avelin-api
+          port:
+            name: http

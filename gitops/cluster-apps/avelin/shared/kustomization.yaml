@@ -1,0 +1,11 @@
+namespace: avelin
+
+resources:
+  - avelin-secretstore.yaml
+  - cf-r2-externalsecret.yaml
+  - db-externalsecret.yaml
+  - ghcr-externalsecret.yaml
+  - oauth-externalsecret.yaml
+  - sync-externalsecret.yaml
+  - zero-externalsecret.yaml
+  - avelin-config.yaml

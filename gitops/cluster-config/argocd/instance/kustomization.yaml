@@ -1,0 +1,5 @@
+namespace: argocd
+resources:
+  - cluster-argocd.yaml
+  - server-httproute.yaml
+  - server-backend-policy.yaml

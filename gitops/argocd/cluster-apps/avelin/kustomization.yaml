@@ -1,0 +1,7 @@
+resources:
+  - avelin-apps-project.yaml
+  - avelin-shared-application.yaml
+  - avelin-sync-application.yaml
+  - avelin-api-application.yaml
+  - avelin-web-application.yaml
+  - avelin-zero-application.yaml

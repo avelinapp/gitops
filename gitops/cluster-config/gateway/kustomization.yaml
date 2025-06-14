@@ -1,0 +1,4 @@
+namespace: infra
+resources:
+  - avelin-gateway.yaml
+  - namespace.yaml

@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: avelin-zero
+  namespace: avelin
+  labels:
+    app: avelin-zero
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: avelin-zero
+  template:
+    metadata:
+      labels:
+        app: avelin-zero
+    spec:
+      volumes:
+        - name: zero-replica
+          persistentVolumeClaim:
+            claimName: zero-pvc
+      containers:
+        - name: avelin-zero
+          image: rocicorp/zero:0.20.2025052100
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 4848
+              protocol: TCP
+          env:
+            - name: ZERO_REPLICA_FILE
+              value: /data/sync-replica.db
+            - name: LOG_LEVEL
+              value: debug
+          envFrom:
+            - secretRef:
+                name: zero-secret
+          volumeMounts:
+            - name: zero-replica
+              mountPath: /data

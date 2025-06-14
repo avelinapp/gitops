@@ -1,0 +1,6 @@
+namespace: avelin
+
+resources:
+  - web-deploy.yaml
+  - web-svc.yaml
+  - web-httproute.yaml

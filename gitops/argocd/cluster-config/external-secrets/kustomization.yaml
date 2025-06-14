@@ -1,0 +1,3 @@
+resources:
+  - eso-operator-application.yaml
+  - eso-instance-application.yaml

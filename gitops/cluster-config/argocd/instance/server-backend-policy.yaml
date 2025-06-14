@@ -1,0 +1,15 @@
+apiVersion: networking.gke.io/v1
+kind: GCPBackendPolicy
+metadata:
+  name: server-backend-policy
+  namespace: argocd
+spec:
+  default:
+    # Enable session affinity based on client IP
+    sessionAffinity:
+      type: CLIENT_IP
+  targetRef:
+    group: "" # core API group
+    kind: Service
+    name: argocd-server # must match your Service name
+    namespace: argocd # same namespace as the Service

@@ -1,0 +1,7 @@
+namespace: argocd
+
+resources:
+  - cluster-config-project.yaml
+  - argocd
+  - gateway
+  - external-secrets

@@ -1,0 +1,7 @@
+namespace: avelin
+
+resources:
+  - api-externalsecret.yaml
+  - api-deploy.yaml
+  - api-svc.yaml
+  - api-httproute.yaml

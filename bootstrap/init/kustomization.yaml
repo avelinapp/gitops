@@ -1,0 +1,3 @@
+resources:
+  - ../../gitops/cluster-config/argocd/operator
+  - ../../gitops/cluster-config/argocd/instance

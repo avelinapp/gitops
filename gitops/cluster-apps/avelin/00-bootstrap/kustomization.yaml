@@ -1,0 +1,4 @@
+namespace: avelin
+resources:
+  - namespace.yaml
+  - doppler-avelin-secret.yaml
