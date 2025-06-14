@@ -1,2 +1,2 @@
 resources:
-  - networking-application.yaml
+  - gateway-application.yaml
