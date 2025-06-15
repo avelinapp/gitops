@@ -5,3 +5,4 @@ resources:
   - api-deploy.yaml
   - api-svc.yaml
   - api-httproute.yaml
+  - api-healthcheckpolicy.yaml
