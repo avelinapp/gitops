@@ -4,3 +4,4 @@ resources:
   - sync-deploy.yaml
   - sync-svc.yaml
   - sync-httproute.yaml
+  - sync-healthcheckpolicy.yaml
