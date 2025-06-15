@@ -10,7 +10,7 @@ spec:
   gatewayClassName: gke-l7-global-external-managed
   addresses:
     - type: NamedAddress
-      value: avelin-ip
+      value: avelin-prod-lb-ip
   listeners:
     - name: http
       protocol: HTTP
