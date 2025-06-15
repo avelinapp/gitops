@@ -6,13 +6,12 @@ spec:
   default:
     checkIntervalSec: 10
     timeoutSec: 5
-    healthyThreshold: 1
     unhealthyThreshold: 3
     config:
       type: HTTP
       httpHealthCheck:
+        portName: http
         requestPath: /health
-        portSpecification: USE_NAMED_PORT
   targetRef:
     group: ""
     kind: Service
