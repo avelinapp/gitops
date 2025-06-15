@@ -12,5 +12,4 @@ spec:
   rules:
     - backendRefs:
         - name: avelin-web
-          port:
-            name: http
+          port: 80

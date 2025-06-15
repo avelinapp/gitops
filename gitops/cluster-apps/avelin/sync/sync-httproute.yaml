@@ -12,5 +12,4 @@ spec:
   rules:
     - backendRefs:
         - name: avelin-sync
-          port:
-            name: http
+          port: 80
