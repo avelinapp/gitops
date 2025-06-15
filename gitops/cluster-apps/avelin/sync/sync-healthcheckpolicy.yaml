@@ -11,8 +11,9 @@ spec:
     config:
       type: HTTP
       httpHealthCheck:
-        requestPath: /health
         portSpecification: USE_NAMED_PORT
+        portName: http
+        requestPath: /health
   targetRef:
     group: ""
     kind: Service
