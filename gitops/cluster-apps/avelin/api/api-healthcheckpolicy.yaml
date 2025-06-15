@@ -10,6 +10,7 @@ spec:
     config:
       type: HTTP
       httpHealthCheck:
+        portSpecification: USE_NAMED_PORT
         portName: http
         requestPath: /health
   targetRef:
