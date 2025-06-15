@@ -5,9 +5,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "402"
   name: avelin-zero
 spec:
-  project: cluster-apps
+  project: avelin
   destination:
-    namespace: avelin
+    namespace: argocd
     server: https://kubernetes.default.svc
   source:
     path: gitops/cluster-apps/avelin/zero
