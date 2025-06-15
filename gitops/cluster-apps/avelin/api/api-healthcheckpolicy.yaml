@@ -7,7 +7,7 @@ spec:
     type: HTTP
     httpHealthCheck:
       requestPath: /health
-      portSpecification: USE_SERVING_PORT
+      portSpecification: USE_NAMED_PORT
     checkIntervalSec: 10
     timeoutSec: 5
     healthyThreshold: 1
