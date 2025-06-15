@@ -4,14 +4,15 @@ metadata:
   name: avelin-api-healthcheck
 spec:
   default:
-    type: HTTP
-    httpHealthCheck:
-      requestPath: /health
-      portSpecification: USE_NAMED_PORT
     checkIntervalSec: 10
     timeoutSec: 5
     healthyThreshold: 1
     unhealthyThreshold: 3
+    config:
+      type: HTTP
+      httpHealthCheck:
+        requestPath: /health
+        portSpecification: USE_NAMED_PORT
   targetRef:
     group: ""
     kind: Service
