@@ -21,7 +21,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: avelin-web
-          image: ghcr.io/avelinapp/web:v0.53.3
+          image: ghcr.io/avelinapp/web:v0.53.4
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
