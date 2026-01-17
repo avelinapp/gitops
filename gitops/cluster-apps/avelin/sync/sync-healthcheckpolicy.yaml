@@ -11,8 +11,8 @@ spec:
     config:
       type: HTTP
       httpHealthCheck:
-        portSpecification: USE_NAMED_PORT
-        portName: http
+        portSpecification: USE_FIXED_PORT
+        port: 4100
         requestPath: /health
   targetRef:
     group: ""
